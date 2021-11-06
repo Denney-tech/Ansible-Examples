@@ -5,7 +5,7 @@ Note: This role makes use of default values that fit my particular "windows_brid
 
 Requirements
 ------------
-Windows_bridge host target with Microsoft Deployment Toolkit installed in the default location.
+Windows host with Microsoft Deployment Toolkit installed in the default location.
 
 Role Variables
 --------------
