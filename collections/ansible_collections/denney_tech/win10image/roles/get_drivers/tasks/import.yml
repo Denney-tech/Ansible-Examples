@@ -1,0 +1,25 @@
+---
+# tasks file for get_drivers
+- name: Import HP Drivers to MDT Share
+  ansible.windows.win_powershell:
+    script: "{{ lookup('file', 'import_drivers.ps1') }}"
+    parameters:
+      Manufacturer: HP
+      ProdCode: "{{item.ProdCode}}"
+      Models: "{{item.Models}}"
+  loop: "{{hp}}"
+  loop_control:
+    label: "{{item.ProdCode}}"
+  tags: HP
+
+- name: Import Lenovo Drivers to MDT Share
+  ansible.windows.win_powershell:
+    script: "{{ lookup('file', 'import_drivers.ps1') }}"
+    parameters:
+      Manufacturer: Lenovo
+      ProdCode: "{{item.Types}}"
+      Models: "{{item.Model}}"
+  loop: "{{lenovo}}"
+  loop_control:
+    label: "{{item.Model}}"
+  tags: Lenovo

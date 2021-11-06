@@ -1,0 +1,13 @@
+---
+all:
+  hosts:
+    windows_bridge:
+      ansible_host: foobar.contoso.com
+      ansible_user: administrator@contoso.com
+      ansible_connection: psrp
+      ansible_psrp_auth: kerberos
+#      ansible_psrp_ca_cert: /etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt
+      ansible_psrp_ca_cert: /etc/ssl/certs/ca-certificates.crt
+      ansible_psrp_connection_timeout: 180
+      ansible_psrp_operation_timeout: 180
+      ansible_psrp_read_timeout: 1800

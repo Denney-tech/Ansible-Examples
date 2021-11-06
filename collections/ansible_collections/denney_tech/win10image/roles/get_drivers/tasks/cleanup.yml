@@ -1,0 +1,15 @@
+---
+# tasks file for get_drivers
+- name: Driver Repository Cleanup - HP
+  ansible.windows.win_powershell:
+    script: "{{ lookup('file', 'cleanup_drivers.ps1') }}"
+    parameters:
+      Manufacturer: HP
+  tags: HP
+
+- name: Driver Repository Cleanup - Lenovo
+  ansible.windows.win_powershell:
+    script: "{{ lookup('file', 'cleanup_drivers.ps1') }}"
+    parameters:
+      Manufacturer: Lenovo
+  tags: Lenovo

@@ -1,0 +1,459 @@
+---
+# vars file for get_drivers
+hp:
+  - ProdCode: '18E4'
+    Models:
+      - HP EliteDesk 800 G1 TWR
+  - ProdCode: '18E5'
+    Models:
+      - HP EliteDesk 800 G1 USDT
+  - ProdCode: '18E7'
+    Models:
+      - HP ProDesk 600 G1 SFF
+  - ProdCode: '1991'
+    Models:
+      - HP EliteBook 820 G1
+  - ProdCode: '1993'
+    Models:
+      - HP ProBook 650 G1
+  - ProdCode: 198F
+    Models:
+      - HP EliteBook 840 G1
+      - HP EliteBook 850 G1
+      - HP ZBook 14
+  - ProdCode: '1998'
+    Models:
+      - HP EliteDesk 800 G1 SFF
+  - ProdCode: '2129'
+    Models:
+      - HP Z840 Workstation
+  - ProdCode: 213E
+    Models:
+      - HP EliteBook Folio 1040 G1
+  - ProdCode: 212B
+    Models:
+      - HP Z440 Workstation
+  - ProdCode: '2216'
+    Models:
+      - HP EliteBook 840 G2
+      - HP EliteBook 850 G2
+  - ProdCode: 2B36
+    Models:
+      - 750-150xt
+  - ProdCode: '8053'
+    Models:
+      - HP EliteDesk 800 G2 TWR
+  - ProdCode: '8054'
+    Models:
+      - HP EliteDesk 800 G2 SFF
+  - ProdCode: '8055'
+    Models:
+      - HP EliteDesk 800 G2 DM 35W
+      - HP EliteDesk 800 G2 Mini 35W
+  - ProdCode: '8056'
+    Models:
+      - EliteDesk 800 G2 Mini 65W
+      - HP 800G2ED DM i76700 256G
+      - HP EliteDesk 800 65W G2 Desktop Mini
+      - HP EliteDesk 800 G2 DM 65W
+      - HP EliteDesk 800 G2 DM
+      - HP ELITEDESK 800 G2 MINI 65W
+      - HP EliteDesk 800 G2 Mini PC
+      - HP EliteDesk 800 G2 Mini
+      - HP EliteDesk 800 G2
+      - HP EliteDesk 800 SFF
+  - ProdCode: '8061'
+    Models:
+      - HP ProDesk 400 G3 MT
+  - ProdCode: 806A
+    Models:
+      - HP ProDesk 400 G2 MINI
+  - ProdCode: '8079'
+    Models:
+      - HP EliteBook 840 G3
+      - HP EliteBook 850 G3
+  - ProdCode: 80D5
+    Models:
+      - HP ZBook 15 G3
+  - ProdCode: 80FC
+    Models:
+      - HP Elite x2 1012 G1
+  - ProdCode: 80FD
+    Models:
+      - HP ProBook 650 G2
+  - ProdCode: '8101'
+    Models:
+      - HP ProBook 450 G3
+  - ProdCode: '8135'
+    Models:
+      - HP 250 G4 Notebook PC
+  - ProdCode: '8169'
+    Models:
+      - HP ProDesk 600 G2 DM
+  - ProdCode: '8184'
+    Models:
+      - HP 260 G2 DM
+  - ProdCode: 81BB
+    Models:
+      - HP All-in-One
+  - ProdCode: '8264'
+    Models:
+      - HP EliteDesk 705 G3 TWR
+      - HP EliteDesk 705 G3 TWR (TAA)
+  - ProdCode: '8265'
+    Models:
+      - HP EliteDesk 705 G3 MT
+      - HP EliteDesk 705 G3 MT (TAA)
+      - HP EliteDesk 705 G3 SFF
+      - HP EliteDesk 705 G3 SFF (TAA)
+  - ProdCode: '8266'
+    Models:
+      - HP EliteDesk 705 G3 DM
+      - HP EliteDesk 705 G3 DM (TAA)
+      - HP EliteDesk 705 G3 35W Desktop Mini PC
+      - HP EliteDesk 705 G3 35W Desktop Mini PC (TAA)
+      - HP EliteDesk 705 G3 DM 35W
+      - HP EliteDesk 705 G3 DM 35W (TAA)
+      - HP EliteDesk 705 G3 DM 65W
+      - HP EliteDesk 705 G3 DM 65W (TAA)
+      - HP EliteDesk 705 G3 DM 95W
+      - HP EliteDesk 705 G3 DM 95W (TAA)
+      - HP EliteDesk 705 G3 Desktop Mini
+      - HP EliteDesk 705 G3 Desktop Mini (TAA)
+  - ProdCode: 827D
+    Models:
+      - HP EliteBook x360 1030 G2
+  - ProdCode: 828C
+    Models:
+      - HP EliteBook 840 G4
+      - HP EliteBook 850 G4
+      - HP ZBook 15u G4
+  - ProdCode: '8292'
+    Models:
+      - HP EliteBook 820 G4
+  - ProdCode: '8298'
+    Models:
+      - HP EliteDesk 800 G3 TWR
+      - HP EliteDesk 800 G3 TWR (TAA)
+  - ProdCode: '8299'
+    Models:
+      - HP EliteDesk 800 G3 SFF
+      - HP EliteDesk 800 G3 SFF (TAA)
+  - ProdCode: 829A
+    Models:
+      - ElitreDesk 800 35w G3
+      - HP EliteDesk 800 3G
+      - HP ELITEDESK 800 65W G3 DESKTOP MINI PC
+      - 'HP EliteDesk 800 G3 DM 1vc20us#ABA'
+      - HP EliteDesk 800 G3 DM 35W
+      - HP EliteDesk 800 G3 DM 65W
+      - HP EliteDesk 800 G3 DM 95W
+      - HP EliteDesk 800 G3 DM
+      - HP EliteDesk 800 G3 Mini 35W
+      - HP EliteDesk 800 G3 Mini
+      - HP EliteDesk 800 G3
+      - ElitreDesk 800 35w G3 (TAA)
+      - HP EliteDesk 800 3G (TAA)
+      - HP ELITEDESK 800 65W G3 DESKTOP MINI PC (TAA)
+      - 'HP EliteDesk 800 G3 DM 1vc20us#ABA (TAA)'
+      - HP EliteDesk 800 G3 DM 35W (TAA)
+      - HP EliteDesk 800 G3 DM 65W (TAA)
+      - HP EliteDesk 800 G3 DM 95W (TA)A
+      - HP EliteDesk 800 G3 DM (TAA)
+      - HP EliteDesk 800 G3 Mini 35W (TAA)
+      - HP EliteDesk 800 G3 Mini (TAA)
+      - HP EliteDesk 800 G3 (TAA)
+  - ProdCode: 82A2
+    Models:
+      - HP ProDesk 400 G4 SFF
+  - ProdCode: 82A5
+    Models:
+      - HP ProDesk 400 G3 DM
+  - ProdCode: 82AA
+    Models:
+      - HP ProBook 650 G3
+  - ProdCode: 82CA
+    Models:
+      - HP Elite x2 1012 G2 Tablet
+      - HP Elite x2 1012 G2
+  - ProdCode: 82DE
+    Models:
+      - HP EliteBook 1040 G4
+  - ProdCode: 837F
+    Models:
+      - HP ProBook 470 G5
+  - ProdCode: 83B2
+    Models:
+      - HP EliteBook 840 G5
+      - HP EliteBook 850 G5
+      - HP ZBook 14u G5
+      - HP ZBook 15u G5
+  - ProdCode: 83B3
+    Models:
+      - HP EliteBook 830 G5
+  - ProdCode: '83E0'
+    Models:
+      - HP EliteDesk 800 G4 TWR
+      - HP EliteDesk 800 G4 TWR (TAA)
+  - ProdCode: '83E1'
+    Models:
+      - HP EliteDesk 800 G4 SFF (TAA)
+      - HP EliteDesk 800 G4 SFF
+  - ProdCode: '83E2'
+    Models:
+      - HP EliteDesk 800 G4 35W Desktop Mini PC
+      - HP EliteDesk 800 G4 DM 35W (TAA)
+      - HP EliteDesk 800 G4 DM 35W
+      - HP EliteDesk 800 G4 DM 65W (TAA)
+      - HP EliteDesk 800 G4 DM 95W (TAA)
+      - HP EliteDesk 800 G4 DM 65W
+      - HP EliteDesk 800 G4 DM 95W
+  - ProdCode: '83E7'
+    Models:
+      - HP EliteDesk 705 G4 TWR
+      - HP EliteDesk 705 G4 TWR
+  - ProdCode: '83E8'
+    Models:
+      - HP EliteDesk 705 G4 SFF
+      - HP EliteDesk 705 G4 SFF
+  - ProdCode: '83E9'
+    Models:
+      - HP EliteDesk 705 G4 DM (TAA)
+      - HP EliteDesk 705 G4 DM
+      - HP EliteDesk 705 G4 DM 35W (TAA)
+      - HP EliteDesk 705 G4 DM 35W
+      - HP EliteDesk 705 G4 DM 65W (TAA)
+      - HP EliteDesk 705 G4 DM 65W
+      - HP EliteDesk 705 G4 DM 95W (TAA)
+      - HP EliteDesk 705 G4 DM 95W
+  - ProdCode: '8460'
+    Models:
+      - HP EliteDesk 705 G4 TWR
+      - HP EliteDesk 705 G4 TWR (TAA)
+  - ProdCode: '8461'
+    Models:
+      - HP EliteDesk 705 G4 TWR
+      - HP EliteDesk 705 G4 TWR (TAA)
+  - ProdCode: '8462'
+    Models:
+      - HP EliteDesk 705 G4 SFF
+      - HP EliteDesk 705 G4 SFF (TAA)
+  - ProdCode: '8463'
+    Models:
+      - HP EliteDesk 705 G4 SFF
+      - HP EliteDesk 705 G4 SFF (TAA)
+  - ProdCode: '8464'
+    Models:
+      - HP EliteDesk 705 G4 DM
+      - HP EliteDesk 705 G4 DM (TAA)
+      - HP EliteDesk 705 G4 DM 35W
+      - HP EliteDesk 705 G4 DM 35W (TAA)
+      - HP EliteDesk 705 G4 DM 65W
+      - HP EliteDesk 705 G4 DM 65W (TAA)
+      - HP EliteDesk 705 G4 DM 95W
+      - HP EliteDesk 705 G4 DM 95W (TAA)
+      - HP EliteDesk 705 G4 DM 35W (TAA)
+  - ProdCode: '8414'
+    Models:
+      - GPI-112979
+      - HP Elite x2 1013 G3 Tablet
+      - HP Elite x2 1013 G3
+  - ProdCode: 842D
+    Models:
+      - HP ZBook 17 G5
+  - ProdCode: 844F
+    Models:
+      - HP ZBook Studio x360 G5
+  - ProdCode: '8456'
+    Models:
+      - HP Z2 G4 SFF
+      - HP Z2 G4 SFF Workstation
+      - HP Z2 SFF G4 Workstation
+  - ProdCode: '8752'
+    Models:
+      - HP Z2 G5 SFF
+      - HP Z2 G5 SFF Workstation
+      - HP Z2 SFF G5 Workstation
+  - ProdCode: '8753'
+    Models:
+      - HP Z2 G5 SFF
+      - HP Z2 G5 SFF Workstation
+      - HP Z2 SFF G5 Workstation
+  - ProdCode: '8538'
+    Models:
+      - HP ProBook 450 G6
+  - ProdCode: '8549'
+    Models:
+      - HP EliteBook 840 G6
+      - HP EliteBook 850 G6
+  - ProdCode: 856E
+    Models:
+      - HP ProBook 650 G5
+  - ProdCode: '8591'
+    Models:
+      - HP Z1 Entry Tower G5
+      - HP EilteDesk 800 G5 TWR
+      - HP EilteDesk 800 G5 TWR (TAA)
+  - ProdCode: '8592'
+    Models:
+      - HP EliteDesk 800 G5 SFF
+      - HP EliteDesk 800 G5 SFF (TAA)
+  - ProdCode: '8595'
+    Models:
+      - HP EliteDesk 800 G5 Desktop Mini
+      - HP EliteDesk 800 G5 Desktop Mini (TAA)
+      - HP EliteDesk 800 G5 35W Desktop Mini PC
+      - HP EliteDesk 800 G5 35W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G5 DM 35W
+      - HP EliteDesk 800 G5 DM 35W (TAA)
+      - HP EliteDesk 800 G5 DM 65W
+      - HP EliteDesk 800 G5 DM 65W (TAA)
+      - HP EliteDesk 800 G5 DM 95W
+      - HP EliteDesk 800 G5 DM 95W (TAA)
+  - ProdCode: '8597'
+    Models:
+      - HP ProDesk 600 G5 Desktop Mini
+      - HP ProDesk 600 G5 Desktop Mini (TAA)
+      - HP ProDesk 600 G5 Desktop Mini PC
+      - HP ProDesk 600 G5 Desktop Mini (TAA) PC
+      - HP ProDesk 600 G5 35W Desktop Mini PC
+      - HP ProDesk 600 G5 35W Desktop Mini PC (TAA)
+      - HP ProDesk 600 G5 65W Desktop Mini PC
+      - HP ProDesk 600 G5 65W Desktop Mini PC (TAA)
+      - HP ProDesk 600 G5 95W Desktop Mini PC
+      - HP ProDesk 600 G5 95W Desktop Mini PC (TAA)
+      - HP ProDesk 600 G5 DM 35W
+      - HP ProDesk 600 G5 DM 35W (TAA)
+      - HP ProDesk 600 G5 DM 65W
+      - HP ProDesk 600 G5 DM 65W (TAA)
+      - HP ProDesk 600 G5 DM 95W
+      - HP ProDesk 600 G5 DM 95W (TAA)
+  - ProdCode: 85B9
+    Models:
+      - HP Elite x2 G4
+  - ProdCode: 860C
+    Models:
+      - HP ZBook 17 G6
+  - ProdCode: 86A0
+    Models:
+      - HP ProBook 450 G7
+  - ProdCode: 870B
+    Models:
+      - HP Z1 Entry Tower G6
+      - HP EilteDesk 800 G6 TWR
+      - HP EilteDesk 800 G6 TWR (TAA)
+      - HP EliteDesk 800 G6 SFF
+      - HP EliteDesk 800 G6 SFF (TAA)
+      - HP EliteDesk 800 G6 Small Form Factor
+      - HP EliteDesk 800 G6 Small Form Factor (TAA)
+      - HP EliteDesk 800 G6 Small Form Factor PC
+      - HP EliteDesk 800 G6 Small Form Factor PC (TAA)
+  - ProdCode: 870C
+    Models:
+      - HP EliteDesk 800 G6 SFF
+      - HP EliteDesk 800 G6 SFF (TAA)
+      - HP EliteDesk 800 G6 Small Form Factor
+      - HP EliteDesk 800 G6 Small Form Factor (TAA)
+      - HP EliteDesk 800 G6 Small Form Factor PC
+      - HP EliteDesk 800 G6 Small Form Factor PC (TAA)
+  - ProdCode: 870F
+    Models:
+      - HP EliteDesk 800 G6 Desktop Mini
+      - HP EliteDesk 800 G6 Desktop Mini (TAA)
+      - HP EliteDesk 800 G6 Desktop Mini PC
+      - HP EliteDesk 800 G6 Desktop Mini (TAA) PC
+      - HP EliteDesk 800 G6 35W Desktop Mini PC
+      - HP EliteDesk 800 G6 35W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 65W Desktop Mini PC
+      - HP EliteDesk 800 G6 65W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 95W Desktop Mini PC
+      - HP EliteDesk 800 G6 95W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 DM 35W
+      - HP EliteDesk 800 G6 DM 35W (TAA)
+      - HP EliteDesk 800 G6 DM 65W
+      - HP EliteDesk 800 G6 DM 65W (TAA)
+      - HP EliteDesk 800 G6 DM 95W
+      - HP EliteDesk 800 G6 DM 95W (TAA)
+  - ProdCode: '8710'
+    Models:
+      - HP EliteDesk 800 G6 Desktop Mini
+      - HP EliteDesk 800 G6 Desktop Mini (TAA)
+      - HP EliteDesk 800 G6 Desktop Mini PC
+      - HP EliteDesk 800 G6 Desktop Mini (TAA) PC
+      - HP EliteDesk 800 G6 35W Desktop Mini PC
+      - HP EliteDesk 800 G6 35W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 65W Desktop Mini PC
+      - HP EliteDesk 800 G6 65W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 95W Desktop Mini PC
+      - HP EliteDesk 800 G6 95W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 DM 35W
+      - HP EliteDesk 800 G6 DM 35W (TAA)
+      - HP EliteDesk 800 G6 DM 65W
+      - HP EliteDesk 800 G6 DM 65W (TAA)
+      - HP EliteDesk 800 G6 DM 95W
+      - HP EliteDesk 800 G6 DM 95W (TAA)
+  - ProdCode: '8711'
+    Models:
+      - HP EliteDesk 800 G6 Desktop Mini
+      - HP EliteDesk 800 G6 Desktop Mini (TAA)
+      - HP EliteDesk 800 G6 Desktop Mini PC
+      - HP EliteDesk 800 G6 Desktop Mini (TAA) PC
+      - HP EliteDesk 800 G6 35W Desktop Mini PC
+      - HP EliteDesk 800 G6 35W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 65W Desktop Mini PC
+      - HP EliteDesk 800 G6 65W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 95W Desktop Mini PC
+      - HP EliteDesk 800 G6 95W Desktop Mini PC (TAA)
+      - HP EliteDesk 800 G6 DM 35W
+      - HP EliteDesk 800 G6 DM 35W (TAA)
+      - HP EliteDesk 800 G6 DM 65W
+      - HP EliteDesk 800 G6 DM 65W (TAA)
+      - HP EliteDesk 800 G6 DM 95W
+      - HP EliteDesk 800 G6 DM 95W (TAA)
+  - ProdCode: '8723'
+    Models:
+      - HP EliteBook 830 G7 Notebook PC
+      - HP EliteBook 840 G7 Notebook PC
+      - HP ZBook 14 G7
+      - HP ZBook Firefly 14 G7 Mobile
+      - HP ZBook Firefly 14 inch G7 Mobile Workstation PC
+  - ProdCode: '8724'
+    Models:
+      - HP ZBook 14 G7
+      - HP ZBook Firefly 14 G7 Mobile
+      - HP ZBook Firefly 14 inch G7 Mobile Workstation PC
+      - HP ZBook 15 G7
+      - HP ZBook Firefly 15 G7 Mobile
+      - HP ZBook Firefly 15 inch G7 Mobile Workstation PC
+      - HP EliteBook 850 G7 Notebook PC
+  - ProdCode: '8715'
+    Models:
+      - HP ProDesk 600 G6 Desktop Mini
+      - HP ProDesk 600 G6 Desktop Mini (TAA)
+      - HP ProDesk 600 G6 Desktop Mini PC
+      - HP ProDesk 600 G6 Desktop Mini (TAA) PC
+      - HP ProDesk 600 G6 35W Desktop Mini PC
+      - HP ProDesk 600 G6 35W Desktop Mini PC (TAA)
+      - HP ProDesk 600 G6 65W Desktop Mini PC
+      - HP ProDesk 600 G6 65W Desktop Mini PC (TAA)
+      - HP ProDesk 600 G6 95W Desktop Mini PC
+      - HP ProDesk 600 G6 95W Desktop Mini PC (TAA)
+      - HP ProDesk 600 G6 DM 35W
+      - HP ProDesk 600 G6 DM 35W (TAA)
+      - HP ProDesk 600 G6 DM 65W
+      - HP ProDesk 600 G6 DM 65W (TAA)
+      - HP ProDesk 600 G6 DM 95W
+      - HP ProDesk 600 G6 DM 95W (TAA)
+  - ProdCode: 880D
+    Models:
+      - HP EliteBook 830 G8
+      - HP EliteBook 830 G8 Notebook PC
+      - HP EliteBook 840 G8
+      - HP EliteBook 840 G8 Notebook PC
+      - HP ZBook 14 G8
+      - HP ZBook Firefly 14 G8 Mobile
+      - HP ZBook Firefly 14 inch G8 Mobile Workstation PC
+  - ProdCode: '8846'
+    Models:
+      - HP EliteBook 850 G8
+      - HP EliteBook 850 G8 Notebook PC

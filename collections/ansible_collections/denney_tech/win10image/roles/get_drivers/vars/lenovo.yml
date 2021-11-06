@@ -1,0 +1,602 @@
+---
+# vars file for get_drivers
+lenovo:
+  - Model: ThinkCentre M715Q
+    Types:
+      - 10M4
+      - 10RA
+      - 10RB
+      - 10M5
+      - 10RC
+      - 10M2
+      - 10RD
+      - 10M3
+  - Model: ThinkCentre M715Q 2nd Gen
+    Types:
+      - 10VL
+      - 10VN
+      - 10VJ
+      - 10VG
+      - 10VQ
+      - 10VM
+      - 10VH
+      - 10VK
+  - Model: ThinkCentre M810Z
+    Types:
+      - 10NY
+      - 10NX
+      - 10Q0
+      - 10Q2
+      - 10Q1
+  - Model: ThinkCentre M600
+    Types:
+      - 10GA
+      - 10KK
+      - 10GK
+      - 10GE
+      - 10G8
+      - 10GD
+      - 10GF
+      - 10KG
+      - 10GJ
+      - 10G9
+      - 10GC
+      - 10GB
+      - 10KH
+      - 10KJ
+  - Model: ThinkCentre M625Q
+    Types:
+      - 10V2
+      - 10TF
+      - 10TK
+      - 10TJ
+      - 10V1
+      - 10UY
+      - 10TG
+      - 10TH
+      - 10V0
+      - 10TL
+  - Model: ThinkCentre M630E
+    Types:
+      - 10YR
+      - 10YM
+      - 10YN
+      - 10YQ
+  - Model: ThinkCentre M700 THIN CLIENT
+    Types:
+      - 10JQ
+      - 10JT
+      - 10JS
+      - 10JR
+  - Model: ThinkCentre M700 TINY
+    Types:
+      - 10HY
+      - 10JM
+      - 10J0
+      - 10JN
+  - Model: ThinkCentre M700 TOWER AND SMALL
+    Types:
+      - 10GS
+      - 10KQ
+      - 10KN
+      - 10KM
+      - 10GQ
+      - 10KL
+      - 10GT
+      - 10GR
+  - Model: ThinkCentre M700Z
+    Types:
+      - 10EY
+      - 10LM
+      - 10F1
+  - Model: ThinkCentre M710E
+    Types:
+      - 10YD
+      - 10UR
+      - 10UQ
+  - Model: ThinkCentre M710Q
+    Types:
+      - 10MS
+      - 10MQ
+      - 10MT
+      - 10N3
+      - 10QR
+      - 10MR
+  - Model: ThinkCentre M710Q Type 10YC
+    Types: 10YC
+  - Model: ThinkCentre M710S
+    Types:
+      - 10M8
+      - 10M7
+      - 10NC
+      - 10QT
+      - 10R7
+  - Model: ThinkCentre M710T
+    Types:
+      - 10QK
+      - 10M9
+      - 10NB
+      - 10R8
+      - 10MA
+  - Model: ThinkCentre M715S
+    Types:
+      - 10MB
+      - 10MC
+  - Model: ThinkCentre M715T
+    Types:
+      - 10ME
+      - 10MD
+  - Model: ThinkCentre M720S
+    Types:
+      - 10SV
+      - 10SX
+      - 10U6
+      - 10TR
+      - 10U7
+      - 10SU
+      - 10ST
+  - Model: ThinkCentre M720T
+    Types:
+      - 10U5
+      - 10U4
+      - 10SW
+      - 10SQ
+      - 10SS
+      - 10TQ
+      - 10SR
+  - Model: ThinkCentre M725S
+    Types:
+      - 10VU
+      - 10VT
+  - Model: ThinkCentre M73
+    Types:
+      - 10B3
+      - 10DL
+      - 10HK
+      - 10HM
+      - 10HL
+      - 10B5
+      - 10B7
+      - 10B4
+      - 10B1
+      - 10AX
+      - 10DN
+      - 10HJ
+      - 10B6
+      - 10B2
+      - 10DK
+      - 10AY
+      - 10DM
+      - 10B0
+  - Model: ThinkCentre M73P
+    Types:
+      - 10KC
+      - 10KA
+      - 10KB
+      - 10K9
+  - Model: ThinkCentre M79
+    Types:
+      - 10J7
+      - 10CR
+      - 10CN
+      - 10CT
+      - 10CU
+      - 10JB
+      - 10CV
+      - 10JC
+      - 10JA
+      - 10CS
+      - 10J8
+      - 10CW
+      - 10CQ
+      - 10J5
+      - 10J6
+      - 10J9
+  - Model: ThinkCentre M800
+    Types:
+      - 10FX
+      - 10FW
+      - 10FV
+      - 10FY
+  - Model: ThinkCentre M800Z
+    Types:
+      - 10EU
+      - 10EW
+      - 10ET
+      - 10EV
+  - Model: ThinkCentre M820Z
+    Types:
+      - 10SC
+      - 10SD
+      - 10S9
+  - Model: ThinkCentre M83
+    Types:
+      - 10EA
+      - '10E8'
+      - 10AH
+      - 10AG
+      - 10EB
+      - 10AK
+      - 10AL
+      - 10AM
+      - 10AJ
+      - 10AN
+      - '10E9'
+      - 10BE
+  - Model: ThinkCentre M900
+    Types:
+      - 10FG
+      - 10FR
+      - 10FD
+      - 10FC
+      - 10FL
+      - 10FH
+      - 10NE
+      - 10NG
+      - 10ND
+      - 10FS
+      - 10FM
+      - 10NF
+  - Model: ThinkCentre M900X
+    Types:
+      - 10LX
+      - 10LY
+      - 10M6
+  - Model: ThinkCentre M900Z
+    Types:
+      - 10F3
+      - 10F4
+      - 10F5
+      - 10F2
+  - Model: ThinkCentre M90N-1
+    Types:
+      - 11AJ
+      - 11AG
+      - 11AF
+      - 11AE
+      - 11AS
+      - 11AD
+      - 11AL
+      - 11AM
+      - 11AH
+      - 11AK
+  - Model: ThinkCentre M910Q
+    Types:
+      - 10MX
+      - 10MW
+      - 10MV
+      - 10MU
+      - 10QN
+  - Model: ThinkCentre M910S
+    Types:
+      - 10QM
+      - 10NA
+      - 10ML
+      - 10MK
+  - Model: ThinkCentre M910T
+    Types:
+      - 10MM
+      - 10N9
+      - 10MN
+      - 10QL
+  - Model: ThinkCentre M910X
+    Types:
+      - 10N2
+      - 10QQ
+      - 10N1
+      - 10R4
+      - 10N0
+      - 10MY
+  - Model: ThinkCentre M910Z
+    Types:
+      - 10NV
+      - 10NT
+      - 10NS
+      - 10NR
+      - 10NU
+      - 10RM
+  - Model: ThinkCentre M920Q
+    Types:
+      - 10RS
+      - 10T1
+      - 10UH
+      - 10V8
+      - 10RR
+      - 10SY
+      - 10T2
+      - 10RT
+      - 10RU
+  - Model: ThinkCentre M920S
+    Types:
+      - 10SL
+      - 10SJ
+      - 10TN
+      - 10SK
+      - 10U3
+      - 10U2
+  - Model: ThinkCentre M920T
+    Types:
+      - 10U0
+      - 10U1
+      - 10SG
+      - 10TM
+      - 10SM
+      - 10SF
+      - 10SH
+  - Model: ThinkCentre M920X
+    Types:
+      - 10T5
+      - 10S3
+      - 10S0
+      - 10T6
+      - 10S4
+      - 10UJ
+      - 10S2
+      - 10T3
+      - 10S1
+  - Model: ThinkCentre M920Z
+    Types:
+      - 10S6
+      - 10S7
+      - 10Y5
+      - 10Y6
+  - Model: ThinkCentre M93
+    Types:
+      - 10A3
+      - 10A1
+      - 10DF
+      - 10A4
+      - 10A0
+      - 10A5
+      - 10A2
+      - 10DG
+  - Model: ThinkCentre M93P
+    Types:
+      - 10AA
+      - 10A8
+      - 10DJ
+      - 10A6
+      - 10A7
+      - 10AB
+      - 10DH
+      - 10A9
+  - Model: ThinkCentre M75S-1
+    Types:
+      - 11A9
+      - 11AA
+      - 11AV
+      - 11AW
+  - Model: ThinkCentre M720E
+    Types:
+      - 11BE
+      - 11BD
+  - Model: ThinkCentre M720Q
+    Types:
+      - 10T7
+      - 10TA
+      - 10UA
+      - 10TC
+      - 10T8
+      - 10T9
+      - 10U9
+      - 10U8
+  - Model: ThinkCentre M75Q-1
+    Types:
+      - 11A7
+      - 11A4
+      - 11A5
+      - 11A6
+  - Model: ThinkCentre M80Q
+    Types:
+      - 11DQ
+      - 11DR
+      - 11DS
+      - 11DN
+      - 11F7
+      - 11EH
+      - 11H7
+      - 11H8
+      - 11EG
+      - 11F9
+      - 11F8
+      - 11F6
+      - 11QA
+      - 11Q9
+  - Model: ThinkCentre M70Q
+    Types:
+      - 11DT
+      - 11DU
+      - 11DV
+      - 11DW
+  - Model: ThinkCentre M70S
+    Types:
+      - 11EX
+      - 11DB
+      - 11DC
+      - 11EW
+  - Model: ThinkCentre M70T
+    Types:
+      - 11EV
+      - 11D9
+      - 11EU
+      - 11DA
+  - Model: ThinkCentre M80S
+    Types:
+      - 11CV
+      - 11EM
+      - 11CU
+      - 11EN
+  - Model: ThinkCentre M80T
+    Types:
+      - 11CT
+      - 11CS
+      - 11EK
+      - 11EL
+  - Model: ThinkCentre M70A
+    Types:
+      - '11E2'
+      - '11E3'
+      - 11CL
+      - 11CK
+  - Model: ThinkCentre M90A
+    Types:
+      - '11E0'
+      - 11CE
+      - 11DY
+      - 11CD
+      - 11JX
+  - Model: ThinkCentre M90S
+    Types:
+      - 11D6
+      - 11D7
+      - 11D2
+      - 11D1
+  - Model: ThinkCentre M75N
+    Types:
+      - 11G4
+      - 11BT
+      - 11GW
+      - 11BX
+      - 11BS
+      - 11BW
+      - 11G5
+      - 11BU
+      - 11GX
+      - 11BV
+      - 11G7
+      - 11G6
+  - Model: ThinkCentre M90Q
+    Types:
+      - 11CR
+      - 11DJ
+      - 11DG
+      - 11DH
+      - 11DL
+      - 11F0
+      - 11EY
+      - 11DK
+  - Model: ThinkCentre M90T
+    Types:
+      - 11D0
+      - 11D4
+      - 11D5
+      - 11CY
+  - Model: ThinkCentre M70C
+    Types:
+      - 11GK
+      - 11GJ
+      - 11GL
+      - 11GM
+  - Model: ThinkCentre M75S Gen 2
+    Types:
+      - 11JD
+      - 11JC
+      - 11JB
+      - 11JA
+      - 11W3
+      - 11W4
+      - 11W2
+      - 11W1
+  - Model: ThinkCentre M75T Gen 2
+    Types:
+      - 11KC
+      - 11KD
+      - 11KB
+      - 11KE
+      - 11W8
+      - 11W6
+      - 11W5
+      - 11W7
+  - Model: ThinkCentre M75Q Gen 2
+    Types:
+      - 11JJ
+      - 11JM
+      - 11JK
+      - 11JL
+  - Model: ThinkCentre M75S Gen-2
+    Types:
+      - 11JA
+      - 11JB
+      - 11JC
+      - 11JD
+  - Model: ThinkCentre M70Q Type 11e8
+    Types: '11E8'
+  - Model: ThinkCentre M75Q 1
+    Types:
+      - 11A5
+      - 11A7
+      - 11A4
+      - 11A6
+  - Model: ThinkCentre M75Q Gen 2
+    Types:
+      - 11JM
+      - 11JL
+      - 11JK
+      - 11JJ
+  - Model: ThinkCentre M90N 1
+    Types:
+      - 11AE
+      - 11AM
+      - 11AK
+      - 11AG
+      - 11AS
+      - 11AL
+      - 11AD
+      - 11AF
+      - 11AJ
+      - 11AH
+  - Model: ThinkCentre M70Q Gen 2
+    Types:
+      - 11N3
+      - 11N4
+      - 11MY
+      - 11N0
+  - Model: ThinkCentre M70S Gen 2
+    Types:
+      - 11M5
+      - 11M9
+      - 11M6
+      - 11MA
+  - Model: ThinkCentre M70T Gen 2
+    Types:
+      - 11M4
+      - 11M7
+      - 11M3
+      - 11M8
+  - Model: ThinkCentre M75S Gen 2 CEZANNE
+    Types:
+      - 11R8
+      - 11RA
+      - 11R7
+      - 11R9
+  - Model: ThinkCentre M75T Gen 2 CEZANNE
+    Types:
+      - 11RE
+      - 11RC
+      - 11RB
+      - 11RD
+  - Model: ThinkCentre M70A Gen 2
+    Types:
+      - 11K6
+      - 11K3
+      - 11K4
+      - 11K5
+  - Model: ThinkCentre M90S Gen 2
+    Types:
+      - 11L7
+      - 11L6
+      - 11L3
+      - 11L2
+  - Model: ThinkCentre M90A Gen 2
+    Types:
+      - 11K1
+      - 11K2
+      - 11K0
+      - 11JY
+      - 11MN
+  - Model: ThinkCentre M90T Gen 2
+    Types:
+      - 11L4
+      - 11L5
+      - 11L0
+      - 11L1

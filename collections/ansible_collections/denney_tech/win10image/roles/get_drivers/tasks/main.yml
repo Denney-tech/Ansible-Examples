@@ -1,0 +1,24 @@
+---
+# tasks file for get_drivers
+- include_vars: vars/hp.yml
+  tags: HP
+
+- include_vars: vars/lenovo.yml
+  tags: Lenovo
+
+- community.windows.win_psmodule:
+    state: latest
+  args: "{{item}}"
+  loop:
+    - name: HPCMSL
+    - name: PsIni
+  tags: general
+
+- include_tasks: download.yml
+  tags: download
+
+- include_tasks: import.yml
+  tags: import
+
+- include_tasks: cleanup.yml
+  tags: cleanup
