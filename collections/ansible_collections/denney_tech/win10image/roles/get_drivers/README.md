@@ -1,10 +1,11 @@
 get_drivers
 =========
 
-Update Latest Drivers
+Note: This role makes use of default values that fit my particular "windows_bridge" host for Ansible. Those vars can be overwritten, but they default to using an E: drive. In my case, I'm using a storage pool with Tier 1 and 2 NVME/SATA SSD caches and large HDD storage to help improve performance. We maintain a large number of models with MDT.
 
 Requirements
 ------------
+Windows_bridge host target with Microsoft Deployment Toolkit installed in the default location.
 
 Role Variables
 --------------
