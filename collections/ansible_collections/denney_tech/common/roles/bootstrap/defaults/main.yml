@@ -1,0 +1,9 @@
+---
+# defaults file for bootstrap
+bootstrap:
+  enabled: false
+  configured: false
+  force_update: false
+
+psrp:
+  windows_bridge: "{{if inventory_hostname == 'windows_bridge' true else false}}"

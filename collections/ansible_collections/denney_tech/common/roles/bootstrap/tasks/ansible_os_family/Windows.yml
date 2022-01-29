@@ -1,0 +1,75 @@
+---
+- name: Check if NuGet minimum version is available
+  ansible.windows.win_powershell:
+    script: |
+      $ansible.changed = $false
+      $versionmet = $false
+      $getminimumrequirements = Get-PackageProvider Nuget -ea SilentlyContinue | Where-Object Version -gt 2.8.5.201
+      if ([string]::IsNullOrEmpty($getminimumrequirements)) {
+        Install-PackageProvider Nuget -Force -Confirm:$false -ea SilentlyContinue | Out-Null
+        $ansible.changed = $true
+        $versionmet = $true
+      } else {
+        $versionmet = $true
+      }
+      if ($versionmet -ne $true) {
+        $ansible.failed = $true
+      }
+  register: NuGet
+
+- name: Check if PowerShellGet minimum version is available
+  ansible.windows.win_powershell:
+    script: |
+      $ansible.changed = $false
+      $versionmet = $false
+      $getminimumrequirements = Get-Module -Name PowerShellGet -ListAvailable -ea SilentlyContinue | Where-Object Version -gt 1.6.0.0
+      if ([string]::IsNullOrEmpty($getminimumrequirements)) {
+        Update-Module -Name PowerShellGet -Force -ea SilentlyContinue | Out-Null
+        $ansible.changed = $true
+        $versionmet = $true
+      } else {
+        $versionmet = $true
+      }
+      if ($versionmet -ne $true) {
+        $ansible.failed = $true
+      }
+  register: PowerShellGet
+
+- name: Check if PackageManagement minimum version is available
+  ansible.windows.win_powershell:
+    script: |
+      $ansible.changed = $false
+      $versionmet = $false
+      $getminimumrequirements = Get-Module -Name PackageManagement -ListAvailable -ea SilentlyContinue | Where-Object Version -gt 1.1.7.0
+      if ([string]::IsNullOrEmpty($getminimumrequirements)) {
+        Update-Module -Name PackageManagement -Force -ea SilentlyContinue | Out-Null
+        $ansible.changed = $true
+        $versionmet = $true
+      } else {
+        $versionmet = $true
+      }
+      if ($versionmet -ne $true) {
+        $ansible.failed = $true
+      }
+  register: PackageManagement
+
+- name: Update NuGet
+  community.windows.win_psmodule:
+    name: NuGet
+    state: latest
+
+- name: Update PowerShellGet
+  community.windows.win_psmodule:
+    name: PowerShellGet
+    state: latest
+
+- name: Update PackageManagement
+  community.windows.win_psmodule:
+    name: PackageManagement
+    state: latest
+
+- name: Set Powershell configured fact to true
+  set_fact:
+    bootstrap:
+      configured: true
+    cacheable: yes

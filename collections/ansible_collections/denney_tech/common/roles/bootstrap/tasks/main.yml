@@ -1,0 +1,13 @@
+---
+# tasks file for bootstrap
+
+- name: Begin bootstrapping connection requirements
+  include_tasks: "ansible_connection/{{ansible_connection}}.yml"
+  when: bootstrap.enabled is not defined or not bootstrap.enabled or bootstrap.force_update is defined
+
+- name: Gather Facts
+  setup:
+
+- name: Begin provisioning OS requirements
+  include_tasks: "ansible_os_family/{{ansible_os_family}}.yml"
+  when: bootstrap.configured is not defined or not bootstrap.configured or bootstrap.force_update is defined

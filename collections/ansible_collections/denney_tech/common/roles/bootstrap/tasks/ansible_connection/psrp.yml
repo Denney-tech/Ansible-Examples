@@ -1,0 +1,127 @@
+---
+- name: Test winrm over HTTPS
+  block:
+    - name: Try winrm over HTTPS
+      ansible.windows.win_ping:
+      register: win_ping_https
+      ignore_unreachable: yes
+      vars:
+        - ansible_port: 5986
+    - name: Trigger task failure when unreachable
+      ansible.builtin.command: /bin/false
+      delegate_to: localhost
+      when: "'unreachable' in win_ping_https"
+  rescue:
+    - block:
+        - name: Try winrm over HTTP connection with Custom Config
+          ansible.windows.win_ping:
+          ignore_unreachable: yes
+          register: win_ping_http
+          vars:
+            - ansible_port: 5985
+            - ansible_psrp_configuration_name: Ansible.AWX.Automation
+        - name: Trigger task failure when unreachable
+          ansible.builtin.command: /bin/false
+          delegate_to: localhost
+          when: "'unreachable' in win_ping_http"
+      rescue:
+        - name: Test winrm over HTTP
+          block:
+            - name: Try winrm over HTTP connection
+              ansible.windows.win_ping:
+              ignore_unreachable: yes
+              register: win_ping_default
+              vars:
+                - ansible_port: 5985
+            - name: Trigger task failure when unreachable
+              ansible.builtin.command: /bin/false
+              delegate_to: localhost
+              when: "'unreachable' in win_ping_default"
+          rescue:
+            - name: Enable winrm over HTTP
+              community.windows.psexec:
+                hostname: "{{ansible_host}}"
+                connection_username: "{{ansible_user}}"
+                connection_password: "{{ansible_password}}"
+                encrypt: yes
+                executable: cmd.exe
+                arguments: /c winrm quickconfig -transport:http -quiet -force
+              delegate_to: localhost
+            - name: Retry winrm over HTTP connection
+              vars:
+                - ansible_port: 5985
+              ansible.builtin.wait_for_connection:
+                delay: 10
+                timeout: 30
+            - name: Enable Script Execution
+              vars:
+                - ansible_port: 5985
+              ansible.windows.win_powershell:
+                script: |
+                  $policies = Get-ExecutionPolicy -List | Where-Object {$_.Scope -notlike "*Policy" -and $_.Scope -notlike "Process" -and $_.ExecutionPolicy -notlike "RemoteSigned"}
+                  if ($policies) {
+                    $policies | Set-ExecutionPolicy RemoteSigned -Force
+                    $ansible.changed = $true
+                  } else {
+                    $ansible.changed = $false
+                  }
+        # Restricted to the provisioning user account.
+        - name: Configure Ansible.AWX.Automation PSSessionConfiguration - Second Hop enabled
+          vars:
+            - ansible_port: 5985
+          community.windows.win_pssession_configuration:
+            name: "Ansible.AWX.Automation"
+            description: "Network enabled PSSessionConfiguration restricted to {{ansible_user}} account."
+            company_name: "{{bootstrap.company_name | default('Denney.dev')}}"
+            author: "Ansible - {{ansible_user}} - {{lookup('pipe', 'date +%Y%m%dT%H%M%S')}}"
+            execution_policy: "remote_signed"
+            security_descriptor_sddl: "{{custom__psrp_configuration_sddl|default(omit)}}"
+            run_as_credential_username: "{{ansible_user}}"
+            run_as_credential_password: "{{ansible_password}}"
+            state: present
+          register: PSSessionConfig
+        - name: Restart winrm service to refresh PSSession Configs
+          vars:
+            - ansible_port: 5985
+          ansible.windows.win_service:
+            name: winrm
+            state: restarted
+          ignore_unreachable: yes
+          ignore_errors: yes
+          when: PSSessionConfig.changed
+        - name: Retry winrm over HTTP connection with Custom Config
+          ansible.builtin.wait_for_connection:
+            delay: 10
+            timeout: 30
+          vars:
+            - ansible_port: 5985
+            - ansible_psrp_configuration_name: Ansible.AWX.Automation
+          when: PSSessionConfig.changed
+    - name: Enable-PSRemoting-TLS.ps1
+      vars:
+        - ansible_port: 5985
+        - ansible_psrp_configuration_name: Ansible.AWX.Automation
+      ansible.windows.win_powershell:
+        script: "{{ lookup('file', 'Enable-PSRemoting-TLS.ps1') }}"
+        parameters:
+          fqdn: "{{ansible_host}}"
+    - name: Retry winrm over HTTPS
+      vars:
+        - ansible_port: 5986
+      ansible.builtin.wait_for_connection:
+        delay: 10
+        timeout: 30
+
+- name: Set bootstrap Enabled fact
+  set_fact:
+    bootstrap:
+      enabled: true
+    cacheable: yes
+
+# Other roles that depend on this one may need to delegate tasks to the windows_bridge, which is provisioned to overcome the second hop problem.
+# 
+- name: Deprovision custom config
+  community.windows.win_pssession_configuration:
+    name: "Ansible.AWX.Automation"
+    state: absent
+  when: not psrp.windows_bridge
